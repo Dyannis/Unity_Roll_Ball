@@ -1,0 +1,90 @@
+{
+    "name": "AndroidInput",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "f958b13d-dc23-47d1-91c9-0fd0a50ede81",
+            "actions": [
+                {
+                    "name": "TouchMove",
+                    "type": "Value",
+                    "id": "61043e00-4019-44b4-9e94-dcbfdd9a9ade",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "2D Vector",
+                    "id": "67431f4a-53f2-44bd-8d4c-9475d05ab195",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TouchMove",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "2913dcec-2126-46b4-96eb-ca5ac394c4bb",
+                    "path": "<Touchscreen>/primaryTouch/delta/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Android",
+                    "action": "TouchMove",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "0d5bfc5a-959e-4cdb-9bd8-7e4d0902c336",
+                    "path": "<Touchscreen>/primaryTouch/delta/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Android",
+                    "action": "TouchMove",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "96737041-d6f1-4a33-9918-49baa62bb19e",
+                    "path": "<Touchscreen>/primaryTouch/delta/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Android",
+                    "action": "TouchMove",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "f08cb210-4fed-4aca-b82d-b2bd346638dd",
+                    "path": "<Touchscreen>/primaryTouch/delta/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Android",
+                    "action": "TouchMove",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Android",
+            "bindingGroup": "Android",
+            "devices": [
+                {
+                    "devicePath": "<Touchscreen>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
