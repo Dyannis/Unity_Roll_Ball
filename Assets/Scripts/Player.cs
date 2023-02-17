@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     private Rigidbody _rigidbody;
 
     private int ScoreValue;
+    private int countHit;
 
     [SerializeField] private float speedBall = 5f;
     private float movementX;
@@ -75,8 +76,9 @@ public class Player : MonoBehaviour
         {
             UpdateScore();
             ballTouch?.Invoke();
-            Instantiate(_wallPrefab, other.gameObject.transform.position, Quaternion.identity);
+            Instantiate(_wallPrefab, _scenario.FirstWalls[countHit], Quaternion.identity);
             Destroy(other.gameObject);
+            countHit++;
         }
     }
 
